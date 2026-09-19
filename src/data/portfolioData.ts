@@ -1,231 +1,391 @@
-import type { PersonalDetails, SkillCategory, Project, Experience, Service } from '../types'
+import type {
+  PersonalDetails,
+  SkillCategory,
+  Project,
+  Experience,
+  Service,
+} from '../types'
 
 export const personalDetails: PersonalDetails = {
   name: 'Kartik Mahato',
-  role: 'Full-Stack Developer & Cloud Architect',
-  tagline: 'Engineering scalable web platforms, modern cloud infrastructures, and intuitive user experiences.',
-  bio: 'I am a passionate Full-Stack Developer with deep expertise in modern JavaScript/TypeScript, the React ecosystem, high-throughput Node.js/Python backends, and cloud-native architectures. I bridge the gap between design precision and engineering performance.',
-  subBio: 'With a strong foundation in distributed systems, database optimization, and modern UI engineering, I specialize in turning complex product visions into resilient, production-ready applications that users love.',
-  location: 'India (Available Worldwide / Remote)',
-  email: 'kartik.mahato.dev@example.com',
-  phone: '+91 98765 43210',
-  status: 'Open to Full-Time Roles & High-Impact Contracts',
+
+  role: 'B.Tech CSE Student & Creative Developer',
+
+  tagline:
+    'Computer Science student building web experiences and exploring creative technology.',
+
+  bio:
+    'I am a B.Tech Computer Science Engineering student at SVIET, Chandigarh. I enjoy learning through practical projects, building websites, exploring JavaScript and React, and combining technology with graphic design and creative work.',
+
+  subBio:
+    'Currently focused on strengthening my web development skills, learning JavaScript and React, improving my design skills, and building projects that turn ideas into something people can actually use.',
+
+  location: 'Chandigarh, India',
+
+  email: 'kartikmahatosviet@gmail.com',
+
+  phone: '',
+
+  status: 'Open to Internship Opportunities',
+
   availableForHire: true,
+
   socials: {
-    github: 'https://github.com/kartikmahato',
-    linkedin: 'https://linkedin.com/in/kartikmahato',
-    twitter: 'https://twitter.com/kartikmahato',
-    email: 'mailto:kartik.mahato.dev@example.com',
+    github: 'https://github.com/kartikmhtodroid',
+    linkedin: 'https://www.linkedin.com/in/kartik-mahato-bokaro99/',
+    twitter: '',
+    email: 'mailto:kartikmahatosviet@gmail.com',
   },
+
   stats: [
-    { label: 'Years Experience', value: '4+', description: 'Designing & shipping production web applications' },
-    { label: 'Projects Completed', value: '25+', description: 'Full-stack apps, SaaS platforms & open-source tools' },
-    { label: 'Cloud Deployments', value: '50+', description: 'Dockerized microservices & serverless pipelines' },
-    { label: 'Code Quality & Uptime', value: '99.9%', description: 'Test coverage, zero-downtime releases & CI/CD' },
+    {
+      label: 'Degree',
+      value: 'B.Tech CSE',
+      description: 'Computer Science Engineering student',
+    },
+    {
+      label: 'Graduation',
+      value: '2029',
+      description: 'Expected graduation year',
+    },
+    {
+      label: 'Projects',
+      value: '2',
+      description: 'Personal projects currently being developed',
+    },
+    {
+      label: 'Focus',
+      value: 'Learning',
+      description: 'Building skills through practical projects',
+    },
   ],
 }
 
 export const skillCategories: SkillCategory[] = [
   {
-    category: 'Frontend Engineering',
-    description: 'Creating accessible, responsive, and blazing-fast user interfaces',
+    category: 'Web Development',
+    description:
+      'Building responsive websites while strengthening my frontend development skills.',
     skills: [
-      { name: 'React 19 / 18', level: 95, popular: true },
-      { name: 'TypeScript', level: 92, popular: true },
-      { name: 'Next.js', level: 88, popular: true },
-      { name: 'Tailwind CSS', level: 96, popular: true },
-      { name: 'JavaScript (ESNext)', level: 95 },
-      { name: 'State (Zustand/Redux)', level: 88 },
-      { name: 'HTML5 & Modern CSS', level: 95 },
-      { name: 'Vite & Webpack', level: 86 },
+      { name: 'HTML5', level: 75, popular: true },
+      { name: 'CSS3', level: 70, popular: true },
+      { name: 'JavaScript', level: 60, popular: true },
+      { name: 'React', level: 50, popular: true },
+      { name: 'TypeScript', level: 40 },
+      { name: 'Tailwind CSS', level: 50 },
+      { name: 'Vite', level: 45 },
     ],
   },
+
   {
-    category: 'Backend & APIs',
-    description: 'Architecting robust server-side services and high-performance endpoints',
+    category: 'Programming',
+    description:
+      'Programming fundamentals, problem solving, and computer science concepts.',
     skills: [
-      { name: 'Node.js & Express', level: 92, popular: true },
-      { name: 'Python (FastAPI / Flask)', level: 86, popular: true },
-      { name: 'RESTful Architecture', level: 95, popular: true },
-      { name: 'GraphQL', level: 80 },
-      { name: 'WebSockets & Socket.io', level: 84 },
-      { name: 'Microservices Design', level: 85 },
-      { name: 'JWT & OAuth 2.0', level: 90 },
-      { name: 'API Security & Caching', level: 88 },
+      { name: 'C++', level: 65, popular: true },
+      { name: 'JavaScript', level: 60, popular: true },
+      { name: 'Data Structures & Algorithms', level: 50 },
     ],
   },
+
   {
-    category: 'Cloud, DevOps & Systems',
-    description: 'Streamlining CI/CD, container orchestration, and multi-cloud infra',
+    category: 'UI & Graphic Design',
+    description:
+      'Creating visual designs, interfaces, and creative digital content.',
     skills: [
-      { name: 'Docker & Containers', level: 90, popular: true },
-      { name: 'Kubernetes Basics', level: 75 },
-      { name: 'AWS (EC2, S3, Lambda)', level: 84, popular: true },
-      { name: 'Google Cloud Platform', level: 82 },
-      { name: 'GitHub Actions & CI/CD', level: 88, popular: true },
-      { name: 'Nginx & Reverse Proxies', level: 82 },
-      { name: 'Linux / Shell Scripting', level: 85 },
-      { name: 'Vercel / Netlify / Render', level: 92 },
+      { name: 'Graphic Design', level: 70, popular: true },
+      { name: 'UI Design', level: 65, popular: true },
+      { name: 'Visual Design', level: 65 },
+      { name: '2D Illustration', level: 50 },
     ],
   },
+
   {
-    category: 'Databases & ORMs',
-    description: 'Designing normalized schemas, caching layers, and high-volume indexing',
+    category: 'Design Tools',
+    description:
+      'Tools used for design, visual content, audio, and creative projects.',
     skills: [
-      { name: 'PostgreSQL', level: 90, popular: true },
-      { name: 'MongoDB', level: 88, popular: true },
-      { name: 'Redis (Caching & PubSub)', level: 85, popular: true },
-      { name: 'Prisma ORM', level: 90 },
-      { name: 'Mongoose', level: 86 },
-      { name: 'MySQL', level: 82 },
-      { name: 'Supabase & Firebase', level: 88 },
+      { name: 'Figma', level: 60, popular: true },
+      { name: 'Canva', level: 70, popular: true },
+      { name: 'Adobe Photoshop', level: 60 },
+      { name: 'Adobe Illustrator', level: 55 },
+      { name: 'Adobe Audition', level: 50 },
+    ],
+  },
+
+  {
+    category: 'Development Tools',
+    description:
+      'Tools and platforms used while learning and building personal projects.',
+    skills: [
+      { name: 'Git', level: 55, popular: true },
+      { name: 'GitHub', level: 55, popular: true },
+      { name: 'VS Code', level: 75 },
+      { name: 'GitHub Pages', level: 50 },
     ],
   },
 ]
 
 export const projects: Project[] = [
   {
-    id: 'cloudscale-nexus',
-    title: 'CloudScale Nexus',
-    tagline: 'Distributed Real-Time Cloud Infrastructure & Metrics Platform',
-    description: 'An enterprise cloud monitoring suite streaming live telemetry, CPU/Memory telemetry, cluster health, and alert notifications across multi-region server clusters.',
-    fullDescription: 'Architected with React 19, Tailwind CSS, Node.js microservices, and Redis Pub/Sub for sub-50ms metrics propagation. Includes customizable anomaly alert webhooks and dark-mode data visualizations.',
-    category: 'Full Stack',
-    tags: ['React', 'TypeScript', 'Node.js', 'Redis', 'Docker', 'Tailwind CSS'],
-    liveUrl: 'https://example.com/demo/cloudscale',
-    githubUrl: 'https://github.com/kartikmahato/cloudscale-nexus',
+    id: 'personal-portfolio',
+
+    title: 'Personal Portfolio',
+
+    tagline:
+      'A personal portfolio website showcasing my development and creative work.',
+
+    description:
+      'A responsive portfolio website built to showcase my skills, projects, learning journey, and creative work.',
+
+    fullDescription:
+      'This portfolio is a personal project built while learning modern web development. It uses React, TypeScript, Tailwind CSS, and Vite, and is deployed using GitHub Pages.',
+
+    category: 'Web Development',
+
+    tags: [
+      'React',
+      'TypeScript',
+      'Tailwind CSS',
+      'Vite',
+      'GitHub Pages',
+    ],
+
+    liveUrl: 'https://kartikmhtodroid.github.io/PORTFOLIO/',
+
+    githubUrl: 'https://github.com/kartikmhtodroid/PORTFOLIO',
+
     featured: true,
-    metrics: '99.99% metrics delivery with <50ms WebSocket latency',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80',
+
+    metrics: 'Personal learning project',
+
+    image:
+      'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80',
   },
+
   {
-    id: 'devflow-ai',
-    title: 'DevFlow AI Assistant',
-    tagline: 'Automated AI Code Review & Pull Request Analysis Engine',
-    description: 'An intelligent platform integrating with GitHub webhooks to analyze pull requests, detect performance regressions, check security vulnerabilities, and suggest architectural fixes.',
-    fullDescription: 'Built with Next.js, Python FastAPI, Google Gemini API, and PostgreSQL. Features automated inline diff recommendations and token-optimized semantic AST parsing.',
-    category: 'Mobile & AI',
-    tags: ['Python', 'FastAPI', 'Next.js', 'Gemini AI', 'PostgreSQL', 'Tailwind CSS'],
-    liveUrl: 'https://example.com/demo/devflow',
-    githubUrl: 'https://github.com/kartikmahato/devflow-ai',
+    id: 'project-radio',
+
+    title: 'Project Radio',
+
+    tagline:
+      'A music-focused web project designed for discovering and listening to music.',
+
+    description:
+      'A personal web project exploring how to build a free music experience with a clean interface and background playback in mind.',
+
+    fullDescription:
+      'Project Radio is an ongoing personal project where I am learning web development by building a music-focused website. The project is helping me practice HTML, CSS, JavaScript, React, responsive design, APIs, and user interface development.',
+
+    category: 'Web Development',
+
+    tags: [
+      'HTML',
+      'CSS',
+      'JavaScript',
+      'React',
+      'API',
+      'Responsive Design',
+    ],
+
+    liveUrl: '',
+
+    githubUrl: '',
+
     featured: true,
-    metrics: 'Over 40% reduction in average code review turnaround',
-    image: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80',
+
+    metrics: 'Currently in development',
+
+    image:
+      'https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=800&q=80',
   },
+
   {
-    id: 'shopvibe-commerce',
-    title: 'ShopVibe Headless Commerce',
-    tagline: 'High-Performance E-Commerce Engine with Stripe Checkout',
-    description: 'A lightning-fast headless commerce platform featuring live inventory tracking, fuzzy product search, dynamic promo codes, and multi-currency checkout.',
-    fullDescription: 'Leverages React, Zustand for global cart management, Express.js backend, MongoDB with text indexing, and Stripe Webhooks with automated PDF invoice generation.',
-    category: 'Full Stack',
-    tags: ['React', 'Node.js', 'MongoDB', 'Stripe API', 'Zustand', 'Tailwind CSS'],
-    liveUrl: 'https://example.com/demo/shopvibe',
-    githubUrl: 'https://github.com/kartikmahato/shopvibe-commerce',
-    featured: true,
-    metrics: 'Sub-second page transitions & 100/100 Lighthouse performance',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80',
-  },
-  {
-    id: 'tasksync-workspace',
-    title: 'TaskSync Team Workspace',
-    tagline: 'Collaborative Real-Time Workspace with Kanban & Live Sync',
-    description: 'A modular productivity app supporting drag-and-drop Kanban boards, real-time presence indicators, instant comments, and automated sprint reports.',
-    fullDescription: 'Engineered with React, TypeScript, Tailwind CSS, Socket.io, and Prisma with PostgreSQL. Supports workspace member roles and permission matrices.',
-    category: 'Frontend',
-    tags: ['React', 'TypeScript', 'Socket.io', 'Tailwind CSS', 'Prisma', 'PostgreSQL'],
-    liveUrl: 'https://example.com/demo/tasksync',
-    githubUrl: 'https://github.com/kartikmahato/tasksync-workspace',
+    id: 'coming-soon-1',
+
+    title: 'Coming Soon',
+
+    tagline: 'Another project is on the way.',
+
+    description:
+      'A new project will be added here as I continue learning and building.',
+
+    fullDescription:
+      'This project slot is reserved for a future personal project.',
+
+    category: 'Coming Soon',
+
+    tags: ['Coming Soon'],
+
+    liveUrl: '',
+
+    githubUrl: '',
+
     featured: false,
-    metrics: 'Supports up to 200 concurrent live workspace collaborators',
-    image: 'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80',
+
+    metrics: 'Coming soon',
+
+    image:
+      'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80',
   },
+
   {
-    id: 'api-gateway-sentinel',
-    title: 'Sentinel Cloud Gateway',
-    tagline: 'High-Throughput Reverse Proxy & Rate Limiting Service',
-    description: 'A lightweight cloud API gateway and authentication reverse proxy featuring distributed token-bucket rate limiting and latency caching.',
-    fullDescription: 'Developed in Go / Node.js with Redis cluster storage. Handles token decoding, IP whitelisting, and automated circuit breaking for upstream microservices.',
-    category: 'Backend & Cloud',
-    tags: ['Node.js', 'Redis', 'Docker', 'NGINX', 'Cloud Security'],
-    liveUrl: 'https://example.com/demo/sentinel',
-    githubUrl: 'https://github.com/kartikmahato/sentinel-gateway',
+    id: 'coming-soon-2',
+
+    title: 'Coming Soon',
+
+    tagline: 'More work will be added here.',
+
+    description:
+      'A future project currently in the planning or learning stage.',
+
+    fullDescription:
+      'This project slot is reserved for a future personal project.',
+
+    category: 'Coming Soon',
+
+    tags: ['Coming Soon'],
+
+    liveUrl: '',
+
+    githubUrl: '',
+
     featured: false,
-    metrics: 'Benchmarked at 15,000 requests/sec with <3ms processing overhead',
-    image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80',
+
+    metrics: 'Coming soon',
+
+    image:
+      'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80',
   },
 ]
 
 export const experiences: Experience[] = [
   {
-    id: 'exp-1',
-    role: 'Senior Full-Stack Software Engineer',
-    company: 'TechVanguard Solutions',
-    location: 'Remote',
-    period: '2023 — Present',
+    id: 'education',
+
+    role: 'B.Tech Computer Science Engineering Student',
+
+    company: 'SVIET',
+
+    location: 'Chandigarh, India',
+
+    period: '2025 — 2029',
+
     current: true,
+
     description: [
-      'Architected and led the development of core web applications serving 250,000+ monthly active users using React, TypeScript, and Node.js microservices.',
-      'Reduced median API latency by 45% by restructuring PostgreSQL indexing and implementing a distributed Redis caching tier.',
-      'Containerized full application stacks with Docker and implemented automated GitHub Actions CI/CD pipelines, decreasing deployment cycles from hours to minutes.',
-      'Mentored 6 junior and mid-level developers, establishing code quality standards, automated linting, and comprehensive PR review workflows.',
+      'Currently pursuing a Bachelor of Technology in Computer Science Engineering.',
+      'Learning programming, data structures, web development, and computer science fundamentals.',
+      'Building personal projects to apply what I learn through practical development.',
+      'Exploring web development, graphic design, and creative technology.',
     ],
-    technologies: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'Docker', 'AWS', 'Tailwind CSS'],
+
+    technologies: [
+      'C++',
+      'JavaScript',
+      'HTML',
+      'CSS',
+      'React',
+      'Git',
+      'GitHub',
+    ],
   },
+
   {
-    id: 'exp-2',
-    role: 'Full-Stack Developer',
-    company: 'InnovateX Labs',
-    location: 'Hybrid',
-    period: '2021 — 2023',
-    current: false,
+    id: 'personal-projects',
+
+    role: 'Independent Project Development',
+
+    company: 'Personal Projects',
+
+    location: 'Remote',
+
+    period: '2026 — Present',
+
+    current: true,
+
     description: [
-      'Engineered interactive customer dashboards, real-time reporting views, and RESTful APIs using React, Python FastAPI, and MongoDB.',
-      'Integrated Stripe and PayPal payment gateways with automated webhooks and transaction auditing.',
-      'Revamped legacy client-side state management to Zustand, cutting re-renders by 35% and improving mobile responsiveness.',
-      'Collaborated closely with product designers and backend engineers to translate Figma mockups into pixel-perfect responsive components.',
+      'Building personal projects to develop practical programming and design skills.',
+      'Currently working on a personal portfolio and Project Radio.',
+      'Learning by designing, coding, testing, debugging, and improving projects.',
+      'Exploring the combination of web development and creative design.',
     ],
-    technologies: ['React', 'FastAPI', 'Python', 'MongoDB', 'Tailwind CSS', 'Docker', 'Jest'],
-  },
-  {
-    id: 'exp-3',
-    role: 'Software Development Associate',
-    company: 'ByteCraft Studio',
-    location: 'On-site',
-    period: '2020 — 2021',
-    current: false,
-    description: [
-      'Developed responsive user interfaces and landing pages using modern JavaScript (ES6+), React, and SCSS/Tailwind.',
-      'Built reusable component libraries and participated in database schema migrations.',
-      'Optimized Core Web Vitals, achieving 95+ scores across key marketing and application portals.',
+
+    technologies: [
+      'HTML',
+      'CSS',
+      'JavaScript',
+      'React',
+      'TypeScript',
+      'Tailwind CSS',
+      'Git',
+      'GitHub',
     ],
-    technologies: ['JavaScript', 'React', 'HTML5/CSS3', 'REST APIs', 'Git', 'Bootstrap/Tailwind'],
   },
 ]
 
 export const services: Service[] = [
   {
-    title: 'Full-Stack Web Development',
-    description: 'End-to-end development of dynamic, robust, and accessible web applications using modern React, TypeScript, and scalable Node.js/Python backends.',
+    title: 'Frontend Development',
+
+    description:
+      'Building responsive and interactive websites while continuously improving my frontend development skills.',
+
     icon: 'Code2',
-    highlights: ['React & Next.js Ecosystem', 'Responsive & Mobile-First Design', 'State Management & Performance'],
+
+    highlights: [
+      'HTML & CSS',
+      'JavaScript',
+      'React',
+      'Responsive Design',
+    ],
   },
+
   {
-    title: 'Cloud Infrastructure & DevOps',
-    description: 'Containerizing services with Docker, provisioning cloud resources on AWS/GCP, and configuring zero-downtime CI/CD deployment pipelines.',
-    icon: 'Cloud',
-    highlights: ['Docker & Containerization', 'Automated CI/CD Workflows', 'AWS / GCP Cloud Setup'],
+    title: 'UI & Graphic Design',
+
+    description:
+      'Creating clean interfaces and visual designs while combining design principles with technology.',
+
+    icon: 'Palette',
+
+    highlights: [
+      'UI Design',
+      'Graphic Design',
+      'Figma',
+      'Photoshop & Illustrator',
+    ],
   },
+
   {
-    title: 'API Engineering & Microservices',
-    description: 'Designing secure, high-throughput RESTful and WebSocket APIs with JWT authentication, role-based authorization, and caching.',
-    icon: 'Server',
-    highlights: ['RESTful & GraphQL Services', 'JWT & OAuth Authentication', 'Redis Caching & PubSub'],
+    title: 'Creative Projects',
+
+    description:
+      'Exploring creative ideas through web projects, visual content, audio, and digital storytelling.',
+
+    icon: 'Sparkles',
+
+    highlights: [
+      'Creative Web Projects',
+      '2D Visual Content',
+      'Audio Editing',
+      'Digital Storytelling',
+    ],
   },
+
   {
-    title: 'Database Design & Optimization',
-    description: 'Structuring normalized relational schemas (PostgreSQL, MySQL) and NoSQL data stores (MongoDB) optimized for query speed and reliability.',
-    icon: 'Database',
-    highlights: ['PostgreSQL & MongoDB', 'Query Profiling & Indexing', 'Prisma ORM Integrations'],
+    title: 'Continuous Learning',
+
+    description:
+      'Learning new technologies by building practical projects and improving through experimentation.',
+
+    icon: 'BookOpen',
+
+    highlights: [
+      'Learning by Building',
+      'Problem Solving',
+      'Project-Based Learning',
+      'Continuous Improvement',
+    ],
   },
 ]
